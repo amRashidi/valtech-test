@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(200, 200, 200);
+}
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $body-font;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}

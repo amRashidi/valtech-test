@@ -1,0 +1,62 @@
+.app {
+    width: 100%;
+    min-height: 100vh;
+
+    &__logo {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: var(--app-color-dark);
+    }
+
+    &__header {
+        height: $app-header-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing * 3;
+        border-bottom: 1px solid var(--border-color);
+        background-color: var(--app-bg);
+
+        &--dark {
+            svg {
+                fill: #f5b609
+            }
+        }
+    }
+
+    &__main {
+        padding: $spacing*4 0;
+        background-color: var(--app-bg);
+    }
+
+    &--dark {
+        .app__logo,.app__title {
+            color: var(--app-color-light);
+
+        }
+    }
+    &__title {
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+        margin: $spacing*6 0;
+        text-transform: uppercase;
+    }
+    &__skipLink {
+        white-space: nowrap;
+        margin: 1em auto;
+        top: 0;
+        position: fixed;
+        left: 50%;
+        margin-left: -72px;
+        opacity: 0;
+        color: var(--app-color-dark);
+        &:focus {
+            opacity: 1;
+            background-color: white;
+            padding: 0.5em;
+            border: 1px solid black;
+        }
+    }
+}

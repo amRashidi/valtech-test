@@ -1,0 +1,30 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+@use "sass:map";
+$bp-sm: map.get($grid-breakpoints, "sm");
+$bp-md: map.get($grid-breakpoints, "md");
+$bp-lg: map.get($grid-breakpoints, "lg");
+$bp-xl: map.get($grid-breakpoints, "xl");
+
+$body-font: 'Kumbh Sans';
+$app-header-height: 60px;
+$spacing: 5px;
+
+:root {
+    --app-bg: #ffffff;
+    --app-color-light: #ffffff;
+    --app-color-dark: #1b1b1b;
+    --border-color: #cccccc;
+    --app-primary: #227acc;
+}
+.app--dark {
+  --app-bg: #2b2b2b;
+  --app-color-light: #ffffff;
+  --app-color-dark: #1b1b1b;
+  --border-color: #cccccc;
+}

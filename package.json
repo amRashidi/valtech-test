@@ -1,0 +1,38 @@
+{
+  "name": "valtech",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "mock": "json-server mock.json",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "vite-svg-loader": "^3.5.1",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vitest/coverage-c8": "^0.22.1",
+    "@vue/test-utils": "^2.0.2",
+    "babel-loader": "^8.2.5",
+    "jsdom": "^20.0.0",
+    "json-server": "^0.17.0",
+    "sass": "^1.54.8",
+    "sass-loader": "^13.0.2",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7",
+    "vitest": "^0.22.1",
+    "vue-loader": "^16.8.3",
+    "vue-tsc": "^0.39.5"
+  }
+}

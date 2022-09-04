@@ -1,0 +1,40 @@
+@import "./mixins/responsive";
+
+.v-container {
+    width: 100%;
+    padding-left: $spacing*3;
+    padding-right: $spacing*3;
+
+    @include sm {}
+
+    @include md {
+        max-width: $bp-md;
+        margin: 0 auto;
+    }
+
+    @include lg {
+        max-width: $bp-lg;
+        margin: 0 auto;
+    }
+
+    @include xl {
+        max-width: $bp-xl;
+        margin: 0 auto;
+    }
+}
+
+.v-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$spacing;
+    margin-right: -$spacing;
+    margin-bottom: $spacing*2;
+     > [class*=v-col-] {
+        padding: $spacing*3;
+     }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@include make-grid-columns();

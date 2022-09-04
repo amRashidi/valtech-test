@@ -1,0 +1,17 @@
+// Vitest Snapshot v1
+
+exports[`card props 1`] = `
+<h3
+  class="card__title"
+  data-v-ea0f52c8=""
+  id="article-title-undefined"
+/>
+`;
+
+exports[`card props 2`] = `
+<h3
+  class="card__title"
+  data-v-ea0f52c8=""
+  id="article-title-undefined"
+/>
+`;

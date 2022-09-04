@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`btn slot 1`] = `
+"<button class=\\"v-btn\\" data-v-4983db4e=\\"\\">
+  <div class=\\"v-btn__content\\" data-v-4983db4e=\\"\\">Read More</div>
+</button>"
+`;
+
+exports[`component btn 1`] = `
+"<router-link disabled=\\"false\\" class=\\"v-btn\\" data-v-4983db4e=\\"\\">
+  <div class=\\"v-btn__content\\" data-v-4983db4e=\\"\\"></div>
+</router-link>"
+`;

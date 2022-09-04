@@ -1,0 +1,43 @@
+@import "./variables";
+
+.v-btn {
+    &__content {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 0 $spacing*3;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        line-height: normal;
+        color: inherit;
+        height: $spacing*8;
+        min-width: $spacing*13;
+    }
+
+    &--outlined {
+        border: 1px solid var(--app-color-light);
+    }
+
+    &--rounded {
+        border-radius: $spacing*2;
+    }
+
+    &--disabled {
+        pointer-events: none;
+
+        &__content {
+            height: unset;
+
+        }
+    }
+
+    &--text {
+        background-color: transparent;
+
+    }
+
+    &--dark {
+        color: var(--app-color-light);
+    }
+}
