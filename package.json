@@ -9,9 +9,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "mock": "json-server mock.json",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "mock": "json-server mock.json"
   },
   "dependencies": {
     "vite-svg-loader": "^3.5.1",
